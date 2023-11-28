@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        font-weight: 300;
+        box-sizing: border-box;
+        font-family: "Source Serif Pro", serif;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+
+      .container {
+        max-width: 900px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cadastrar novo restaurante</h1>
+    <div class="container">
+      <form action="cadCuidador" method="post">
+        <label for="nome">Nome</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Nome restaurante.."
+          required
+        />
+
+        <label for="descricao">email</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Email..."
+          required
+        />
+
+        <label for="celular">Celular</label>
+        <input
+          type="text"
+          id="celular"
+          name="celular"
+          placeholder="Celular..."
+          required
+        />
+
+        <label for="horario">Tem curso de cuidador?</label>
+        <input type="checkbox" id="temCurso" name="temCurso" />
+    
+        <select name="idEscolaridade" id="idEscolaridade">
+            <option value="1">Ensino Fundamental Incompleto</option>
+            <option value="2">Ensino Fundamental Completo</option>
+            <option value="3">Ensino Médio Incompleto</option>
+            <option value="4">Ensino Médio Completo</option>
+            <option value="5">Ensino Superior Incompleto</option>
+            <option value="6">Ensino Superior Completo</option>
+          </select>
+
+        <input type="submit" value="Cadastrar" />
+      </form>
+    </div>
+  </body>
+</html>
